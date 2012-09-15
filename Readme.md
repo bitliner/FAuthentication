@@ -1,7 +1,7 @@
 # FAuthentication
 
 
-Node.js module to integrate quickly your Node app with Facebook oauth authentication
+Node.js module to integrate quickly your Node app with Facebook OAuth authentication
 
 
 
@@ -48,21 +48,19 @@ app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* thi
 
 ### 3. In your login page insert a button to login and corresponding javascript function to open Facebook dialog box
 
-Like this (required is only script tag and button)
 
 ```html
 
-<html>
-	<head>
-		<script type="text/javascript">
-			var login=function(){
-				window.open('/fauthentication/authenticate?next=/', 'Facebook Login', 'width=300px, height=300');
-			}
-		</script>
-	</head>
-	<body>
-		<button onclick="login()">Facebook Login</button>
-	</body>
-</html>
+...
+<body>
+	<script type="text/javascript">
+		var login=function(){
+			window.open('/fauthentication/authenticate?next=/', 'Facebook Login', 'width=300px, height=300');
+		}
+	</script>
+	<button onclick="login()">Facebook Login</button>		
+</body>
+...
 
 ``` 
+
