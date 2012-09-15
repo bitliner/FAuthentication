@@ -37,7 +37,7 @@ app.get('/', function(req,res){
 
 /* import fauthentication */
 
-var fauthentication=require('fauthetication')
+var fauthentication=require('fauthentication')
 
 /* set FAuthentication's options (parameters of Facebook app and callbacks) */
 
