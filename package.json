@@ -1,6 +1,6 @@
 {
   "name": "fauthentication",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Node module to integrate your Node app with Facebook authentication",
   "main": "index",
   "directories": {
