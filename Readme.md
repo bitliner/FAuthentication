@@ -19,9 +19,9 @@ var fauthentication=require('./../../lib/fauthetication.js')
 /* set FAuthentication's options (parameters of Facebook app and callbacks) */
 
 fauthentication.settings({
-    client_id: '194622933989729',
-    client_secret: '44db9515168f6c2d3ba9f7689a65d47e',
-    redirect_uri: 'http://localhost:3000/fauthentication/getAccessToken',
+    client_id: 'your-app-id',
+    client_secret: 'your-app-secret',
+    redirect_uri: 'http://your-site-domain:your-port/fauthentication/getAccessToken',
     app: app,
     callback: function(accessToken){
         console.log('accessToken',accessToken);
@@ -40,7 +40,7 @@ fauthentication.settings({
 /*  set FAuthentication's url*/
 
 app.get('/fauthentication/authenticate',fauthentication.auth)
-app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken)
+app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* this must be according to `redirect_uri` settings (see above) */
 
 ``` 
 
