@@ -34,6 +34,7 @@ fauthentication.settings({
         console.log('now you have access token',accessToken);
         fauthentication.getUser(function(user){
             console.log('Facebook user data',user);
+            // here you can save user, log in...
         })
 
     }
