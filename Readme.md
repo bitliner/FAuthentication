@@ -46,9 +46,9 @@ app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* thi
 
 ``` 
 
-### 3. In your login page insert a button to login and correspodngin javascript function to open Facebook dialog box
+### 3. In your login page insert a button to login and corresponding javascript function to open Facebook dialog box
 
-Like this
+Like this (required is only script tag and button)
 
 ```html
 
