@@ -64,3 +64,18 @@ app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* thi
 
 ``` 
 
+## Try with examples
+
+```
+git clone git@github.com:bitliner/FAuthentication.git fauthentication
+
+cd fauthentication/examples/fauthentication-with-express
+
+npm install
+
+node app.js
+
+// now in your browser go to http://localhost:3000/ 
+
+``` 
+
