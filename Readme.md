@@ -24,10 +24,12 @@ fauthentication.settings({
     redirect_uri: 'http://your-site-domain:your-port/fauthentication/getAccessToken',
     app: app,
     callback: function(accessToken){
-        console.log('accessToken',accessToken);
+
+        console.log('now you have access token',accessToken);
         fauthentication.getUser(function(user){
             console.log('Facebook user data',user);
         })
+
     }
 })
 ```
@@ -44,4 +46,23 @@ app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* thi
 
 ``` 
 
+### 3. In your login page insert a button to login and correspodngin javascript function to open Facebook dialog box
 
+Like this
+
+```html
+
+<html>
+	<head>
+		<script type="text/javascript">
+			var login=function(){
+				window.open('/fauthentication/authenticate?next=/', 'Facebook Login', 'width=300px, height=300');
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="login()">Facebook Login</button>
+	</body>
+</html>
+
+``` 
