@@ -9,12 +9,18 @@ Node.js module to integrate quickly your Node app with Facebook OAuth authentica
 
 ### 1. create your Facebook app on [Facebook Developers](https://developers.facebook.com/apps)
 
-### 2. specify settings for FAuthentication (with settings of your Facebook app)
+### 2. install FAuthentication
+
+```js
+	npm install fauthentication
+```
+
+### 3. specify settings for FAuthentication (with settings of your Facebook app)
 
 ```js
 /* import fauthentication */
 
-var fauthentication=require('fauthentication.js')
+var fauthentication=require('fauthentication')
 
 /* set FAuthentication's options (parameters of Facebook app and callbacks) */
 
@@ -35,7 +41,7 @@ fauthentication.settings({
 ```
 
 
-### 3. bind the urls of your application with FAuthentication's request handlers 
+### 4. bind the urls of your application with FAuthentication's request handlers 
 
 ```js
 
@@ -46,7 +52,7 @@ app.get('/fauthentication/getAccessToken',fauthentication.getAccessToken) /* thi
 
 ``` 
 
-### 3. In your login page insert a button to login and corresponding javascript function to open Facebook dialog box
+### 5. In your login page insert a button to login and corresponding javascript function to open Facebook dialog box
 
 
 ```html
