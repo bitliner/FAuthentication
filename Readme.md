@@ -14,7 +14,7 @@ Node.js module to integrate quickly your Node app with Facebook OAuth authentica
 ```js
 /* import fauthentication */
 
-var fauthentication=require('./../../lib/fauthetication.js')
+var fauthentication=require('fauthentication.js')
 
 /* set FAuthentication's options (parameters of Facebook app and callbacks) */
 

@@ -2,7 +2,7 @@
   "name": "fauthentication",
   "version": "0.0.1",
   "description": "Node module to integrate your Node app with Facebook authentication",
-  "main": "lib/fauthentication.js",
+  "main": "index",
   "directories": {
     "example": "examples"
   },
